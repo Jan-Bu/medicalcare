@@ -38,11 +38,10 @@ const ServicesOverview = () => {
 
   return (
     <section className="relative py-16 bg-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-transparent to-transparent pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-            This will be a short overview of our services
+          <h2 className="text-3xl md:text-4xl font-bold text-vividblue mb-6">
+            Our Services
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -50,13 +49,13 @@ const ServicesOverview = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="flex items-center justify-center w-16 h-16 bg-red-50 rounded-xl mb-6 mx-auto">
+              <div className="flex items-center justify-center w-16 h-16 bg-gray-200 rounded-xl mb-6 mx-auto">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-4 text-center">
@@ -71,7 +70,7 @@ const ServicesOverview = () => {
 
         {/* View All Services Button */}
         <div className="text-center">
-          <Link 
+          <Link
             to="/services"
             className="inline-flex items-center space-x-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300 text-lg"
           >

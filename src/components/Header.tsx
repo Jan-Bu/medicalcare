@@ -30,7 +30,7 @@ const Header = () => {
               <img
                 src="/logo/logo_white1_nobg.png"
                 alt="Logo"
-                className="h-16" 
+                className="h-16"
               />
             </Link>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
               ) : (
                 <>
                   <Heart className="h-7 w-7 text-red-600" />
-                  <span className="text-lg font-medium">Menu</span>
+                  <span className="text-lg font-medium text-vividblue">Menu</span>
                 </>
               )}
             </button>
@@ -62,8 +62,8 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className={`${isActive(item.href)
-                      ? 'text-red-600 bg-red-50'
-                      : 'text-slate-700 hover:text-red-600 hover:bg-gray-50'
+                      ? 'text-red-600 bg-gray-300'
+                      : 'text-slate-700 hover:text-red-600 hover:bg-gray-200'
                     } block px-3 py-2 text-base font-medium transition-colors duration-200`}
                   onClick={() => setIsMenuOpen(false)}
                 >

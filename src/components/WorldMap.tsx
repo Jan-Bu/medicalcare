@@ -153,7 +153,7 @@ const InteractiveMap: React.FC = () => {
         <div className="relative w-full">
           {/* Map Container */}
           <div
-            className="relative w-full bg-slate-800 rounded-xl overflow-hidden shadow-2xl"
+            className="relative w-full bg-white rounded-xl overflow-hidden shadow-2xl"
           >
             {/* SVG Map */}
             <div className="w-full" style={{ maxWidth: '100%', height: 'auto' }}>
@@ -226,19 +226,19 @@ const InteractiveMap: React.FC = () => {
           </div>
 
           {/* Legend */}
-          <div className="mt-8 bg-slate-800 p-6 rounded-lg">
+          <div className="mt-8 bg-white p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4">Our European & African Network</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {locations.map((location) => (
                 <div
                   key={location.id}
-                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-slate-700 transition-colors cursor-pointer"
+                  className="flex items-start space-x-3 p-3 rounded-md hover:bg-gray-200 transition-colors cursor-pointer"
                   onClick={() => setSelectedLocation(location)}
                 >
                   <MapPin className="h-5 w-5" style={{ color: "rgb(220,38,38)" }} />
                   <div>
-                    <h4 className="font-medium">{location.name}</h4>
-                    <p className="text-sm text-gray-400">{location.description}</p>
+                    <h4 className="font-medium text-slate-900">{location.name}</h4>
+                    <p className="text-sm text-slate-700">{location.description}</p>
                   </div>
                 </div>
               ))}
