@@ -1,36 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Stethoscope, Pill, Heart, Brain, Eye, Bone, ArrowRight } from 'lucide-react';
+import BoneIcon from '../assets/svgs/bone.svg?react';
+import DoctorIcon from '../assets/svgs/doctor.svg?react';
+import PlanningIcon from '../assets/svgs/planning.svg?react';
+import RecoveryIcon from '../assets/svgs/recovery.svg?react';
+import SuppliesIcon from '../assets/svgs/supplies.svg?react';
+import TravelIcon from '../assets/svgs/travel.svg?react';
+import TreatmentIcon from '../assets/svgs/treatment.svg?react';
+import WellnessIcon from '../assets/svgs/wellness.svg?react';
+import ArrowRightIcon from '../assets/svgs/arrow.svg?react';
 
 const ServicesOverview = () => {
+  const [isFlying, setIsFlying] = useState(false);
+
+  useEffect(() => {
+    if (isFlying) {
+      const timer = setTimeout(() => {
+        setIsFlying(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [isFlying]);
+
   const services = [
     {
-      icon: <Stethoscope className="h-8 w-8 text-red-600" />,
+      icon: <TreatmentIcon className="h-8 w-8 stroke-red-600" />,
       title: "Medical Treatments",
       description: "Advanced procedures and surgeries in top European clinics tailored to each patient's needs"
     },
     {
-      icon: <Heart className="h-8 w-8 text-red-600" />,
+      icon: <RecoveryIcon className="h-8 w-8 text-red-600" />,
       title: "Rehabilitation & Recovery",
       description: "Personalized physiotherapy and post-surgery care in world-renowned rehab centers"
     },
     {
-      icon: <Brain className="h-8 w-8 text-red-600" />,
+      icon: <WellnessIcon className="h-8 w-8 text-red-600" />,
       title: "Wellness & Spa Programs",
       description: "Therapeutic stays, spa treatments, and holistic wellness in Europe’s best natural resorts"
     },
     {
-      icon: <Eye className="h-8 w-8 text-red-600" />,
+      icon: (
+        <div
+          onMouseEnter={() => setIsFlying(true)}
+          className={`transition-all duration-700 ease-in-out ${
+            isFlying ? '-translate-x-[200%] opacity-0' : 'translate-x-0 opacity-100'
+          }`}
+        >
+          <TravelIcon className="h-8 w-8 text-red-600" />
+        </div>
+      ),
       title: "Full Medical Travel Support",
       description: "We handle flights, transfers, accommodation, and coordination for a seamless trip"
     },
     {
-      icon: <Bone className="h-8 w-8 text-red-600" />,
+      icon: <BoneIcon className="h-8 w-8 text-red-600" />,
       title: "Medical Planning & Consultation",
       description: "We assess your case, match you with experts, and design your individual treatment path"
     },
     {
-      icon: <Pill className="h-8 w-8 text-red-600" />,
+      icon: <SuppliesIcon className="h-8 w-8 text-red-600" />,
       title: "Medical Supplies & Exports",
       description: "We provide and ship trusted European medical devices and equipment internationally"
     }
@@ -58,7 +86,7 @@ const ServicesOverview = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-gray-200 rounded-xl mb-6 mx-auto">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-4 text-center">
+              <h3 className="text-xl font-semibold text-vividblue mb-4 text-center">
                 {service.title}
               </h3>
               <p className="text-gray-600 text-center">
@@ -68,14 +96,13 @@ const ServicesOverview = () => {
           ))}
         </div>
 
-        {/* View All Services Button */}
         <div className="text-center">
           <Link
             to="/services"
             className="inline-flex items-center space-x-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300 text-lg"
           >
             <span>View All Services</span>
-            <ArrowRight className="h-6 w-6" />
+            <ArrowRightIcon className="h-6 w-6" />
           </Link>
         </div>
       </div>

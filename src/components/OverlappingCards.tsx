@@ -32,7 +32,7 @@ const OverlappingCards = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-gray-200 rounded-xl mb-6">
                 {card.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">
+              <h3 className="text-xl font-bold text-vividblue mb-4">
                 {card.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">

@@ -10,7 +10,6 @@ interface Location {
   y: number;
 }
 
-// Nastav podle rozměrů SVG mapy!
 const svgWidth = 2000;
 const svgHeight = 857;
 
@@ -42,89 +41,114 @@ const locations: Location[] = [
   {
     id: 'cz',
     name: 'Czech Republic',
-    description: 'Key medical and wellness hub with full-spectrum services.',
+    description: 'Central hub for medical excellence, wellness, and innovation in Europe.',
     features: [
       "Rehabilitation and wellness programs",
-      "Cardiology, orthopedics, IVF, neurosurgery",
-      "Advanced diagnostics and modern clinics",
-      "Popular destination for medical tourism"
+      "Cardiology, orthopedics, IVF, neurosurgery, ophthalmology",
+      "Esthetic/plastic surgery and advanced diagnostics",
+      "Multilingual staff and affordable high-standard care"
     ],
-    x: 990,
-    y: 330
+    x: 1000,
+    y: 300
   },
   {
     id: 'hu',
     name: 'Hungary',
-    description: 'Trusted regional center for complex rehabilitation.',
+    description: 'Regional center for complex rehabilitation and medical tourism.',
     features: [
-      "Recovery and physiotherapy services",
-      "Affordable high-quality treatments",
-      "Experienced multilingual staff"
+      "Physiotherapy and recovery programs",
+      "Wide access to quality and affordable care",
+      "Focus on long-term treatment support"
     ],
-    x: 1040,
-    y: 365
+    x: 1100,
+    y: 345
   },
   {
     id: 'eg',
     name: 'Egypt',
-    description: 'Client origin region and coordination point for medical travel to Europe.',
+    description: 'Provider of high-quality medical services for clients from the Middle East.',
     features: [
-      "Tailored care planning and export support",
-      "Pre-travel guidance and case preparation",
-      "Strong demand for European treatment programs"
+      "Advanced medical procedures and specialist care",
+      "Growing network of modern clinics and hospitals",
+      "Attractive regional option for diagnostics and treatment"
     ],
-    x: 1189,
-    y: 609
+    x: 1450,
+    y: 620
   },
   {
     id: 'de',
     name: 'Germany',
-    description: 'Leading European destination for high-standard medical procedures.',
+    description: 'Major treatment destination with advanced hospital infrastructure.',
     features: [
-      "Advanced diagnostics and surgeries",
-      "Strong hospital infrastructure",
-      "Highly specialized care"
+      "Highly specialized care and modern procedures",
+      "Diagnostic excellence and surgical innovation",
+      "Key partner in European medical network"
     ],
-    x: 935,
-    y: 310
+    x: 965,
+    y: 260
   },
   {
     id: 'fr',
     name: 'France',
-    description: 'Top-tier hospitals and wellness facilities in Western Europe.',
+    description: 'Strong Western European node for treatment and wellness services.',
     features: [
       "Cardiology and internal medicine",
-      "Rehabilitation and wellness",
-      "World-class specialists"
+      "Wellness and rehabilitation offerings",
+      "World-class specialists and clinics"
     ],
-    x: 870,
-    y: 340
+    x: 720,
+    y: 320
   },
   {
     id: 'pl',
     name: 'Poland',
-    description: 'Strong in neurological and elderly care services.',
+    description: 'Focused expertise in neurology and elderly care.',
     features: [
-      "Neurosurgery expertise",
-      "Alzheimer and dementia care",
-      "Modern, cost-effective treatment"
+      "Neurosurgeries and neurodegenerative conditions",
+      "Dementia and Alzheimer’s care",
+      "Efficient and cost-effective medical solutions"
     ],
-    x: 1020,
-    y: 290
+    x: 1140,
+    y: 265
   },
   {
     id: 'ch',
     name: 'Switzerland',
-    description: 'Premium destination for specialized private care.',
+    description: 'Premium location for private and specialized medical care.',
     features: [
-      "Urology and breast surgeries",
-      "High privacy and quality standards",
-      "Personalized programs"
+      "Urology and breast surgery specialization",
+      "High discretion and service quality",
+      "Personalized private programs"
     ],
-    x: 930,
-    y: 365
-  }
+    x: 840,
+    y: 350
+  },
+  {
+    id: 'it',
+    name: 'Italy',
+    description: 'Key partner for medical exports and device manufacturing.',
+    features: [
+      "Medical supplies and export of devices",
+      "Advanced medical manufacturing capabilities",
+      "Integration with European medical logistics"
+    ],
+    x: 980,
+    y: 420
+  },
+  {
+    id: 'gb',
+    name: 'United Kingdom',
+    description: 'Recognized for expertise in orthopedic and surgical care.',
+    features: [
+      "Orthopedics and complex surgeries",
+      "Rehabilitation support services",
+      "Part of pan-European medical cooperation"
+    ],
+    x: 640,
+    y: 260
+  },
 ];
+
 
 const InteractiveMap: React.FC = () => {
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
