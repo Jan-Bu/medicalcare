@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Heart, Brain, Eye, Bone, Pill, ArrowRight } from 'lucide-react';
+import { Stethoscope, Heart, Brain, Eye, Bone, Pill, Flower2, Hotel, Syringe, HandHeart, ArrowRight } from 'lucide-react';
 import ServiceExcellence from '../components/ServiceExcellence';
 import PartneredCentres from '../components/PartneredCentres';
 
@@ -7,45 +7,67 @@ const Services = () => {
   const services = [
     {
       icon: <Stethoscope className="h-12 w-12 text-red-600" />,
-      title: "Service 1",
-      description: "This will describe our comprehensive Service 1 offerings and treatments with detailed information about procedures, benefits, and patient care approach.",
-      image: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["Advanced diagnostics", "Expert consultation", "24/7 support", "Personalized care"]
-    },
-    {
-      icon: <Heart className="h-12 w-12 text-red-600" />,
-      title: "Service 2",
-      description: "This will describe our specialized Service 2 offerings and treatments with comprehensive details about our advanced medical procedures and patient outcomes.",
+      title: "Medical Treatments & Surgeries",
+      description:
+        "Comprehensive medical plans and specialized surgeries across European clinics tailored to each patient's health condition and goals.",
       image: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["State-of-the-art equipment", "Minimally invasive procedures", "Quick recovery", "Follow-up care"]
-    },
-    {
-      icon: <Brain className="h-12 w-12 text-red-600" />,
-      title: "Service 3",
-      description: "This will describe our innovative Service 3 offerings and treatments including cutting-edge technology and specialized care protocols for optimal results.",
-      image: "https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["Neurological expertise", "Advanced imaging", "Precision treatment", "Rehabilitation support"]
-    },
-    {
-      icon: <Eye className="h-12 w-12 text-red-600" />,
-      title: "Service 4",
-      description: "This will describe our comprehensive Service 4 offerings and treatments with focus on precision, safety, and exceptional patient experience throughout the process.",
-      image: "https://images.pexels.com/photos/4386465/pexels-photo-4386465.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["Vision correction", "Laser technology", "Outpatient procedures", "Rapid healing"]
+      features: ["Treatment planning", "Specialist consultations", "Pre-operative prep", "Post-operative care"]
     },
     {
       icon: <Bone className="h-12 w-12 text-red-600" />,
-      title: "Service 5",
-      description: "This will describe our advanced Service 5 offerings and treatments including specialized procedures and comprehensive rehabilitation programs.",
-      image: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["Joint replacement", "Sports medicine", "Physical therapy", "Pain management"]
+      title: "Rehabilitation & Physiotherapy",
+      description:
+        "Dedicated rehabilitation and physiotherapy programs designed to support recovery, mobility, and long-term strength for patients.",
+      image: "https://images.pexels.com/photos/3943882/pexels-photo-3943882.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Physical therapy", "Rehab planning", "Mobility training", "Pain management"]
     },
     {
-      icon: <Pill className="h-12 w-12 text-red-600" />,
-      title: "Service 6",
-      description: "This will describe our comprehensive Service 6 offerings and treatments with detailed medication management and pharmaceutical care services.",
-      image: "https://images.pexels.com/photos/4386463/pexels-photo-4386463.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: ["Medication management", "Drug interactions", "Dosage optimization", "Patient education"]
+      icon: <Flower2 className="h-12 w-12 text-red-600" />,
+      title: "Wellness & Spa Programs",
+      description:
+        "European wellness experiences with holistic spa treatments, thermal healing, and therapeutic environments supporting full-body renewal.",
+      image: "https://images.pexels.com/photos/6621462/pexels-photo-6621462.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Thermal spas", "Stress relief", "Mineral therapy", "Holistic wellness"]
+    },
+    {
+      icon: <Hotel className="h-12 w-12 text-red-600" />,
+      title: "Travel & Accommodation",
+      description:
+        "Complete logistics support for patient stays including hotel arrangements, transportation, and personal assistance during treatment journey.",
+      image: "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Hotel bookings", "Airport pickup", "Local transfers", "Concierge support"]
+    },
+    {
+      icon: <Syringe className="h-12 w-12 text-red-600" />,
+      title: "Preventative Screenings",
+      description:
+        "Early detection services to prevent and manage chronic conditions through diagnostics, check-ups and patient education.",
+      image: "https://images.pexels.com/photos/8460151/pexels-photo-8460151.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Full-body checkups", "Cancer screenings", "Cardiac monitoring", "Nutrition guidance"]
+    },
+    {
+      icon: <Brain className="h-12 w-12 text-red-600" />,
+      title: "Neurology & Mental Health",
+      description:
+        "Cutting-edge neurological diagnostics and care including dementia, Alzheimer’s and mental health services across specialized European centres.",
+      image: "https://images.pexels.com/photos/6749774/pexels-photo-6749774.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Alzheimer’s therapy", "Neuro-surgery", "Psychiatric care", "Brain imaging"]
+    },
+    {
+      icon: <HandHeart className="h-12 w-12 text-red-600" />,
+      title: "Fertility & IVF",
+      description:
+        "Advanced reproductive treatments and IVF programs designed to support families on their fertility journey in top Czech and EU clinics.",
+      image: "https://images.pexels.com/photos/7594089/pexels-photo-7594089.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Fertility assessments", "Hormonal therapy", "In-vitro fertilization", "Donor coordination"]
+    },
+    {
+      icon: <Eye className="h-12 w-12 text-red-600" />,
+      title: "Ophthalmology",
+      description:
+        "Precision laser vision correction, diagnostics and surgical procedures for optimal eye health and quality of sight.",
+      image: "https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: ["Laser correction", "Eye diagnostics", "Minimally invasive surgery", "Vision therapy"]
     }
   ];
 
@@ -61,83 +83,57 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Service Excellence Section - Moved after hero */}
       <ServiceExcellence />
 
-      {/* Services Grid */}
-      <div className="w-full">
-        <div className="space-y-0">
+      <div className="w-full bg-white py-16">
+        <div className="space-y-16">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden flex flex-col lg:flex-row ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } ${
-                index % 2 === 0 ? 'bg-white' : 'bg-gray-100'
-              }`}
+              className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-stretch max-w-7xl mx-auto rounded-3xl shadow-2xl hover:shadow-[0_12px_24px_rgba(0,0,0,0.2)] transition-all duration-300 ease-in-out transform hover:-translate-y-1 bg-white`}
             >
-              {/* Image Section */}
-              <div className="w-full lg:w-1/2 relative overflow-hidden">
-                <div className="aspect-[16/9] relative overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover block"
-                    style={{ 
-                      display: 'block',
-                      verticalAlign: 'top'
-                    }}
-                  />
-                </div>
-                {/* Floating Icon */}
-                <div className="absolute top-4 left-4 lg:top-8 lg:left-8 bg-white/95 backdrop-blur-sm rounded-xl p-3 lg:p-4 shadow-lg">
-                  {service.icon}
-                </div>
+              {/* Image */}
+              <div
+                className={`w-full lg:w-1/2 h-[300px] lg:h-auto overflow-hidden ${index % 2 !== 0 ? 'rounded-r-3xl' : 'rounded-l-3xl'}`}
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              {/* Content Section */}
-              <div className="w-full lg:w-1/2 p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
-                <div className="space-y-6 lg:space-y-8">
-                  <div>
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 lg:mb-6">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-                      {service.description}
-                    </p>
+              {/* Content */}
+              <div
+                className={`w-full lg:w-1/2 bg-white p-8 sm:p-12 flex flex-col justify-center ${index % 2 !== 0 ? 'rounded-l-3xl' : 'rounded-r-3xl'}`}
+              >
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="bg-gray-200 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    {service.icon}
                   </div>
-
-                  {/* Features */}
-                  <div className="space-y-3 lg:space-y-4">
-                    <h4 className="text-lg lg:text-xl font-semibold text-slate-800">Key Features:</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-4">
-                      {service.features.map((feature, featureIndex) => (
-                        <div
-                          key={featureIndex}
-                          className="flex items-center space-x-3"
-                        >
-                          <div className="w-3 h-3 bg-red-600 rounded-full flex-shrink-0"></div>
-                          <span className="text-gray-700 font-medium text-sm sm:text-base lg:text-lg">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* CTA Button */}
-                  <div className="pt-4 lg:pt-6">
-                    <button className="inline-flex items-center space-x-2 lg:space-x-3 bg-red-600 text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-xl font-semibold hover:bg-red-700 transition-colors duration-300 text-base lg:text-lg">
-                      <span>Learn More</span>
-                      <ArrowRight className="h-5 w-5 lg:h-6 lg:w-6" />
-                    </button>
-                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">{service.title}</h3>
                 </div>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">{service.description}</p>
+
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-red-600 rounded-full" />
+                      <span className="text-gray-800 font-medium">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <button className="inline-flex items-center space-x-2 bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition-colors">
+                  <span>Learn More</span>
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Partnered Medical Centres Section - Replaces the bottom section */}
       <PartneredCentres isRehabilitation={false} />
     </div>
   );
