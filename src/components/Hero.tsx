@@ -7,7 +7,7 @@ const Hero = () => {
 
   const slides = [
     {
-      title: "This will be the hero image carousel with captions",
+      title: "Medical Care Beyond Boundaries",
       subtitle: "“Seamless Health Solutions. Crafted in Europe. Centered on You!”",
       description: "Slide 1 description will go here",
       image: "https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080"
