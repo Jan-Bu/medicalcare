@@ -9,6 +9,7 @@ import Rehabilitation from './pages/Equipment';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Contact from './pages/Contact';
+import '@google/model-viewer';
 
 function App() {
   return (
