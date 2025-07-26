@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Heart, Brain, Eye, Bone, Pill, Flower2, Hotel, Syringe, HandHeart, ArrowRight } from 'lucide-react';
+import { Stethoscope, Heart, Brain, Eye, HeartPulse, Pill, Flower2, Hotel, NotepadText, HandHeart, ArrowRight } from 'lucide-react';
 import ServiceExcellence from '../components/ServiceExcellence';
 import PartneredCentres from '../components/PartneredCentres';
 
@@ -14,7 +14,7 @@ const Services = () => {
       features: ["Treatment planning", "Specialist consultations", "Pre-operative prep", "Post-operative care"]
     },
     {
-      icon: <Bone className="h-12 w-12 text-red-600" />,
+      icon: <HeartPulse className="h-12 w-12 text-red-600" />,
       title: "Rehabilitation & Physiotherapy",
       description:
         "Dedicated rehabilitation and physiotherapy programs designed to support recovery, mobility, and long-term strength for patients.",
@@ -38,7 +38,7 @@ const Services = () => {
       features: ["Hotel bookings", "Airport pickup", "Local transfers", "Concierge support"]
     },
     {
-      icon: <Syringe className="h-12 w-12 text-red-600" />,
+      icon: <NotepadText className="h-12 w-12 text-red-600" />,
       title: "Preventative Screenings",
       description:
         "Early detection services to prevent and manage chronic conditions through diagnostics, check-ups and patient education.",

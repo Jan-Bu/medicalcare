@@ -44,7 +44,6 @@ const Header = () => {
                 auto-rotate-delay="0"
                 rotation-per-second="20deg"
                 disable-zoom
-                camera-controls={false}
                 interaction-prompt="none"
                 style={{ height: '64px', width: '64px', overflow: 'visible' }}
               />
